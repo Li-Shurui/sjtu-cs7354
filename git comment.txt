@@ -5,3 +5,38 @@ git add mydiary/diary.txt
 git commit -m "Added diary entry for feature work"
 git add mydiary/diary.txt
 git commit -m "Added another diary entry for feature work"
+git rebase -i HEAD~2
+git checkout main
+git merge feature-newFunc
+git push --all origin
+
+任务二
+git checkout experiment
+git log
+git checkout main
+git cherry-pick d58314c0
+git push --all origin
+
+任务三
+git checkout dev
+git log
+git revert 1a5d6d2f^..7e981249
+git push --all origin
+
+任务四
+git checkout main
+git add frontend/styles.css 
+git commit -m "update frontend/styles.css"
+git checkout feature-upload
+git diff feature-upload main
+git checkout main
+git merge feature-upload
+git add frontend/*
+git commit -m "conflict fixed"
+git push --all origin
+
+任务五
+git checkout documentation
+git rebase -i HEAD~4
+git checkout main
+git merge documentation
