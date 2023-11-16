@@ -1,0 +1,7 @@
+任务一
+git branch feature-newFunc
+git checkout feature-newFunc
+git add mydiary/diary.txt
+git commit -m "Added diary entry for feature work"
+git add mydiary/diary.txt
+git commit -m "Added another diary entry for feature work"
